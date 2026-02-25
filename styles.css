@@ -3,6 +3,15 @@
    Estilo: Blanco, floral, elegante, fino
    ═══════════════════════════════════════════════════ */
 
+/* ─── Forzar modo claro en TODOS los dispositivos ─── */
+:root {
+  color-scheme: light only;
+}
+
+html {
+  color-scheme: light only;
+}
+
 /* ─── Variables ─── */
 :root {
   --white: #FFFFFF;
@@ -51,6 +60,7 @@ html {
 }
 
 body {
+  color-scheme: light only;
   font-family: var(--font-body);
   font-weight: 300;
   font-size: 15px;
