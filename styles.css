@@ -1191,7 +1191,11 @@ select {
   }
 }
 
-/* Modo oscuro */
+/* Modo oscuro DESACTIVADO — la invitación siempre usa colores claros
+   para mantener la estética elegante en todos los dispositivos.
+   Si en el futuro quieres reactivarlo, descomenta el bloque de abajo.
+*/
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #1A1816;
@@ -1207,8 +1211,6 @@ select {
     background-color: #141210;
   }
 
-  /* hero-frame oculto — usa imagen de marco */
-
   .carousel .photo-placeholder {
     background: linear-gradient(145deg, var(--ivory), var(--cream));
   }
@@ -1217,3 +1219,4 @@ select {
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   }
 }
+*/
