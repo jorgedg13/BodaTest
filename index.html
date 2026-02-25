@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Coral &amp; Sergio · Nuestra Boda</title>
+  <meta name="description" content="Invitación de boda de Coral y Sergio — 18 de Abril de 2027">
+  <meta name="theme-color" content="#FDF8F0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="invitation">
+
+    <!-- ════════════════════════════════════════════
+         1 · HERO — Portada
+         ════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-frame"></div>
+      <div class="hero-frame hero-frame--inner"></div>
+
+      <!-- Esquinas florales -->
+      <svg class="corner-ornament corner-tl" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+        <path d="M8,112 C12,70 22,45 48,30 C62,22 82,15 112,8" stroke="var(--gold)" stroke-width="0.7" opacity="0.5"/>
+        <path d="M8,85 C15,55 30,38 55,26 C70,19 90,13 112,8" stroke="var(--sage)" stroke-width="0.6" opacity="0.4"/>
+        <ellipse cx="38" cy="58" rx="5" ry="12" transform="rotate(-55 38 58)" fill="var(--sage)" opacity="0.2"/>
+        <ellipse cx="62" cy="38" rx="4" ry="10" transform="rotate(-40 62 38)" fill="var(--sage)" opacity="0.2"/>
+        <ellipse cx="85" cy="22" rx="3" ry="8" transform="rotate(-30 85 22)" fill="var(--sage)" opacity="0.15"/>
+        <circle cx="48" cy="44" r="4" fill="none" stroke="var(--dusty-rose)" stroke-width="0.6" opacity="0.35"/>
+        <circle cx="48" cy="44" r="1.5" fill="var(--dusty-rose)" opacity="0.4"/>
+        <circle cx="78" cy="26" r="3" fill="none" stroke="var(--dusty-rose)" stroke-width="0.5" opacity="0.25"/>
+        <circle cx="78" cy="26" r="1" fill="var(--dusty-rose)" opacity="0.3"/>
+      </svg>
+      <svg class="corner-ornament corner-tr" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+        <path d="M8,112 C12,70 22,45 48,30 C62,22 82,15 112,8" stroke="var(--gold)" stroke-width="0.7" opacity="0.5"/>
+        <path d="M8,85 C15,55 30,38 55,26 C70,19 90,13 112,8" stroke="var(--sage)" stroke-width="0.6" opacity="0.4"/>
+        <ellipse cx="38" cy="58" rx="5" ry="12" transform="rotate(-55 38 58)" fill="var(--sage)" opacity="0.2"/>
+        <ellipse cx="62" cy="38" rx="4" ry="10" transform="rotate(-40 62 38)" fill="var(--sage)" opacity="0.2"/>
+        <circle cx="48" cy="44" r="4" fill="none" stroke="var(--dusty-rose)" stroke-width="0.6" opacity="0.35"/>
+        <circle cx="48" cy="44" r="1.5" fill="var(--dusty-rose)" opacity="0.4"/>
+      </svg>
+      <svg class="corner-ornament corner-bl" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+        <path d="M8,112 C12,70 22,45 48,30 C62,22 82,15 112,8" stroke="var(--gold)" stroke-width="0.7" opacity="0.5"/>
+        <path d="M8,85 C15,55 30,38 55,26 C70,19 90,13 112,8" stroke="var(--sage)" stroke-width="0.6" opacity="0.4"/>
+        <ellipse cx="62" cy="38" rx="4" ry="10" transform="rotate(-40 62 38)" fill="var(--sage)" opacity="0.2"/>
+        <circle cx="78" cy="26" r="3" fill="none" stroke="var(--dusty-rose)" stroke-width="0.5" opacity="0.25"/>
+        <circle cx="78" cy="26" r="1" fill="var(--dusty-rose)" opacity="0.3"/>
+      </svg>
+      <svg class="corner-ornament corner-br" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+        <path d="M8,112 C12,70 22,45 48,30 C62,22 82,15 112,8" stroke="var(--gold)" stroke-width="0.7" opacity="0.5"/>
+        <ellipse cx="38" cy="58" rx="5" ry="12" transform="rotate(-55 38 58)" fill="var(--sage)" opacity="0.2"/>
+        <ellipse cx="62" cy="38" rx="4" ry="10" transform="rotate(-40 62 38)" fill="var(--sage)" opacity="0.2"/>
+        <circle cx="48" cy="44" r="4" fill="none" stroke="var(--dusty-rose)" stroke-width="0.6" opacity="0.35"/>
+        <circle cx="48" cy="44" r="1.5" fill="var(--dusty-rose)" opacity="0.4"/>
+      </svg>
+
+      <div class="hero-content">
+        <div class="ornament-line"><span class="ornament-diamond">✦</span></div>
+        <p class="hero-label">Nos Casamos</p>
+        <h1 class="hero-names">
+          <span class="name">Coral</span>
+          <span class="ampersand">&amp;</span>
+          <span class="name">Sergio</span>
+        </h1>
+        <div class="ornament-line"><span class="ornament-diamond">✦</span></div>
+        <p class="hero-date">Sábado, 18 de Abril de 2027</p>
+        <img src="assets/Bas%C3%ADlica.png" alt="Basílica de Santa María" class="hero-photo">
+        <p class="hero-venue">Basílica de Santa María · 11:00 h</p>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
+          <path d="M8 4 L8 18 M3 14 L8 19 L13 14" stroke="var(--gold)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         2 · NOSOTROS — Fotos en carrusel
+         ════════════════════════════════════════════ -->
+    <section class="section couple-section fade-in" id="nosotros">
+      <h2 class="section-title">Nosotros</h2>
+      <div class="section-subtitle-line"></div>
+
+      <div class="couple-grid">
+        <!-- Carrusel Coral -->
+        <div class="photo-card">
+          <div class="carousel" data-carousel>
+            <div class="carousel-track">
+              <!-- Añade tus fotos aquí. Ejemplo:
+                   <img src="assets/photos/coral-1.jpg" alt="Coral"> -->
+              <div class="photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--dusty-rose)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 1</span></div>
+              <div class="photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--dusty-rose)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 2</span></div>
+              <div class="photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--dusty-rose)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 3</span></div>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+          <p class="photo-name">Coral</p>
+        </div>
+
+        <!-- Carrusel Sergio -->
+        <div class="photo-card">
+          <div class="carousel" data-carousel>
+            <div class="carousel-track">
+              <!-- Añade tus fotos aquí. Ejemplo:
+                   <img src="assets/photos/sergio-1.jpg" alt="Sergio"> -->
+              <div class="photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--dusty-rose)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 1</span></div>
+              <div class="photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--dusty-rose)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 2</span></div>
+              <div class="photo-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--dusty-rose)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 3</span></div>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+          <p class="photo-name">Sergio</p>
+        </div>
+      </div>
+
+      <p class="couple-quote">
+        «&thinsp;Dos caminos que se encontraron para no volver a separarse&thinsp;»
+      </p>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="divider-star">✦</span></div>
+
+    <!-- ════════════════════════════════════════════
+         3 · LA CELEBRACIÓN — Detalles del evento
+         ════════════════════════════════════════════ -->
+    <section class="section details-section fade-in" id="detalles">
+      <h2 class="section-title">La Celebración</h2>
+      <div class="section-subtitle-line"></div>
+
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="info-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--dusty-rose)" stroke-width="1.2" stroke-linecap="round">
+              <rect x="3" y="4" width="18" height="18" rx="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <h3>Sábado</h3>
+          <p>18 de Abril de 2027</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--dusty-rose)" stroke-width="1.2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3>15:00 h</h3>
+          <p>Inicio en el restaurante</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--dusty-rose)" stroke-width="1.2" stroke-linecap="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3>Restaurante YA</h3>
+          <p>Av. Tres de Agosto · Aspe</p>
+        </div>
+      </div>
+
+      <!-- Carrusel de fotos del lugar -->
+      <div class="venue-carousel fade-in">
+        <div class="carousel carousel--wide" data-carousel>
+          <div class="carousel-track">
+            <img src="assets/restaurante.png" alt="Restaurante YA" class="venue-photo">
+          </div>
+          <div class="carousel-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="divider-star">✦</span></div>
+
+    <!-- ════════════════════════════════════════════
+         4 · PROGRAMA — Timeline del día
+         ════════════════════════════════════════════ -->
+    <section class="section timeline-section fade-in" id="programa">
+      <h2 class="section-title">Programa del Día</h2>
+      <div class="section-subtitle-line"></div>
+
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-time">11:00</span>
+            <h3>Ceremonia</h3>
+            <p>Daremos el «sí, quiero» en la Basílica de Santa María de Elche.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-time">12:30</span>
+            <h3>Cóctel de Bienvenida</h3>
+            <p>Brindis, aperitivos y música en vivo.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-time">15:00</span>
+            <h3>Comida</h3>
+            <p>Menú de temporada con opciones para todos los gustos y necesidades.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-time">—</span>
+            <h3>Fiesta &amp; Baile</h3>
+            <p>¡A bailar! Barra libre y buena música hasta las 24:00.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="divider-star">✦</span></div>
+
+    <!-- ════════════════════════════════════════════
+         5 · DETALLES IMPORTANTES — Protocolo
+         ════════════════════════════════════════════ -->
+    <section class="section protocol-section fade-in" id="protocolo">
+      <h2 class="section-title">Detalles Importantes</h2>
+      <div class="section-subtitle-line"></div>
+
+      <div class="protocol-cards">
+        <div class="protocol-card fade-in">
+          <div class="protocol-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6.5 2L10 7l-1.5 1 3.5 14h0L8.5 8 10 7 6.5 2z"/>
+              <path d="M17.5 2L14 7l1.5 1L12 22h0l3.5-14L14 7l3.5-5z"/>
+              <path d="M8 22h8"/>
+            </svg>
+          </div>
+          <h3>Vestimenta</h3>
+          <p>Formal elegante.<br>Por favor, evitad el color blanco.</p>
+        </div>
+
+        <div class="protocol-card fade-in">
+          <div class="protocol-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1" stroke-linecap="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+              <path d="M12 2v1M12 21v1M2 12h1M21 12h1"/>
+            </svg>
+          </div>
+          <h3>Puntualidad</h3>
+          <p>La ceremonia comenzará a las 11:00 en punto. Os rogamos llegar con antelación. El templo cerrará sus puertas 10&nbsp;minutos antes de que entre la novia.</p>
+        </div>
+
+        <div class="protocol-card protocol-card--parking fade-in">
+          <div class="protocol-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 17h14M5 17a2 2 0 01-2-2V9a1 1 0 011-1l1.5-3.5A1 1 0 016.4 4h11.2a1 1 0 01.9.5L20 8a1 1 0 011 1v6a2 2 0 01-2 2"/>
+              <circle cx="7.5" cy="17" r="1.5"/>
+              <circle cx="16.5" cy="17" r="1.5"/>
+            </svg>
+          </div>
+          <h3>Aparcamiento</h3>
+          <p><strong>Para la ceremonia:</strong> junto a la Basílica de Santa María disponéis de un parking enfrente de la misma, además de espacio público para aparcar a unos 10 minutos a pie.</p>
+          <p><strong>Para la celebración:</strong> se dispone de amplia zona de parking público cerca del recinto del Restaurante YA.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="divider-star">✦</span></div>
+
+    <!-- ════════════════════════════════════════════
+         6 · CUENTA ATRÁS
+         ════════════════════════════════════════════ -->
+    <section class="section countdown-section fade-in" id="cuenta-atras">
+      <h2 class="section-title">Cuenta Atrás</h2>
+      <div class="section-subtitle-line"></div>
+      <p class="countdown-subtitle">¿Cuánto queda para el gran día?</p>
+
+      <div class="countdown-grid" id="timer" aria-live="polite">
+        <div class="countdown-card">
+          <span class="countdown-value" id="days">00</span>
+          <span class="countdown-label">Días</span>
+        </div>
+        <div class="countdown-card">
+          <span class="countdown-value" id="hours">00</span>
+          <span class="countdown-label">Horas</span>
+        </div>
+        <div class="countdown-card">
+          <span class="countdown-value" id="minutes">00</span>
+          <span class="countdown-label">Minutos</span>
+        </div>
+        <div class="countdown-card">
+          <span class="countdown-value" id="seconds">00</span>
+          <span class="countdown-label">Segundos</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="divider-star">✦</span></div>
+
+    <!-- ════════════════════════════════════════════
+         7 · CANCIONES — Solo un textarea
+         ════════════════════════════════════════════ -->
+    <section class="section form-section fade-in" id="canciones">
+      <h2 class="section-title">¿Qué Canción No Puede Faltar?</h2>
+      <div class="section-subtitle-line"></div>
+      <p class="form-intro">Recomiéndanos canciones que te gustaría escuchar en la fiesta. ¡Queremos que la pista de baile sea memorable!</p>
+
+      <div class="form-group">
+        <label for="song-list">Tu lista de canciones</label>
+        <textarea id="song-list" name="canciones" class="songs-textarea" ></textarea>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="divider-star">✦</span></div>
+
+    <!-- ════════════════════════════════════════════
+         8 · RSVP — Confirmar asistencia (ÚLTIMO)
+         ════════════════════════════════════════════ -->
+    <section class="section form-section fade-in" id="rsvp" style="background: var(--white) url('assets/marco-body.ong.png') center / 100% 100% no-repeat !important;">
+      <h2 class="section-title">Confirma tu Asistencia</h2>
+      <div class="section-subtitle-line"></div>
+      <p class="form-intro">Queremos contar contigo. Rellena este breve formulario para que podamos organizar todo con cariño.</p>
+
+      <form id="rsvpForm" class="elegant-form" novalidate>
+        <div class="form-group">
+          <label for="rsvp-name">Nombre completo</label>
+          <input type="text" id="rsvp-name" name="nombre" placeholder="Tu nombre y apellidos" required>
+        </div>
+
+        <div class="form-group">
+          <label>¿Asistirás?</label>
+          <div class="radio-group">
+            <label class="radio-pill">
+              <input type="radio" name="asiste" value="sí" required>
+              <span>Sí, ¡allí estaré!</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="asiste" value="no">
+              <span>No podré ir</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="rsvp-guests">Número de acompañantes</label>
+          <select id="rsvp-guests" name="acompanantes">
+            <option value="0">Voy solo/a</option>
+            <option value="1">+1 acompañante</option>
+            <option value="2">+2 acompañantes</option>
+            <option value="3">+3 o más (especificar)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="rsvp-allergies">Alergias o intolerancias alimentarias</label>
+          <textarea id="rsvp-allergies" name="alergias" rows="3" placeholder="Ej: gluten, frutos secos, lactosa…"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="rsvp-extra">Información adicional <span class="optional">(algo que deban saber los novios o especificar el número de acompañantes)</span></label>
+          <textarea id="rsvp-extra" name="info_extra" rows="3" placeholder="Cualquier cosa que necesites contarnos…"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">
+          <span>Enviar todo</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+
+        <div class="form-status" id="rsvpStatus" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="divider-star">✦</span></div>
+
+    <!-- ════════════════════════════════════════════
+         FOOTER
+         ════════════════════════════════════════════ -->
+    <footer class="footer fade-in">
+
+      <p class="footer-thanks">¡Gracias por acompañarnos<br>en este día tan especial!</p>
+
+      <p class="footer-names">Coral &amp; Sergio</p>
+
+      <div class="footer-gift">
+        <p class="footer-gift-text">Nuestro mayor regalo es que puedas asistir a la ceremonia,<br>pero si deseas apoyarnos económicamente,</p>
+        <p class="footer-iban">IBAN XXXX XXXX XXXX</p>
+      </div>
+
+      <p class="footer-date">18 · 04 · 2027</p>
+
+      <p class="footer-note">Hecho con amor</p>
+    </footer>
+
+  </div><!-- /.invitation -->
+
+  <script src="script.js"></script>
+</body>
+</html>
