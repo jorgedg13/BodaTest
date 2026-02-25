@@ -66,7 +66,7 @@ body {
   font-size: 15px;
   line-height: 1.7;
   color: var(--charcoal);
-  background: #FEFCF9 url('assets/backgroung.png') center / cover no-repeat fixed;
+  background: #FEFCF9 url('assets/background.png') center / cover no-repeat fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -100,7 +100,7 @@ a {
 /* ─── Secciones genéricas ─── */
 .section {
   padding: var(--section-padding);
-  background: url('assets/backgroung.png') center / cover no-repeat, url('assets/marco-body.ong.png') center / 100% 100% no-repeat;
+  background: url('assets/background.png') center / cover no-repeat, url('assets/marco-body.ong.png') center / 100% 100% no-repeat;
   background-color: #FFFFFF;
 }
 
@@ -441,7 +441,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 0.2rem 3rem;
-  background: url('assets/backgroung.png') center / cover no-repeat;
+  background: url('assets/background.png') center / cover no-repeat;
   background-color: #FEFCF9;
 }
 
@@ -980,7 +980,7 @@ select {
 .footer {
   text-align: center;
   padding: 2.5rem 2rem 3rem;
-  background: url('assets/backgroung.png') center / cover no-repeat, url('assets/marco-body.ong.png') center / cover no-repeat;
+  background: url('assets/background.png') center / cover no-repeat, url('assets/marco-body.ong.png') center / cover no-repeat;
   background-color: #FFFFFF;
 }
 
@@ -1131,7 +1131,7 @@ select {
 
 @media (min-width: 600px) {
   body {
-    background: #F3EDE5 url('assets/backgroung.png') center / cover no-repeat fixed;
+    background: #F3EDE5 url('assets/background.png') center / cover no-repeat fixed;
     padding: 2rem 1rem;
   }
 
