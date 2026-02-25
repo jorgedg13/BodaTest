@@ -287,7 +287,7 @@
      Mira el archivo google-apps-script.gs para instrucciones.
      ──────────────────────────────────────────────────── */
   const ENDPOINTS = {
-    rsvp: 'YOUR_RSVP_SCRIPT_URL',
+    rsvp: 'https://script.google.com/macros/s/AKfycbxusySx-94Blb8ozmzHCsHg0jPKL6TdIOXvC4Ekk80jdEVixvfdp2J7E2ca7Ta_vtDc/exec',
   };
 
   async function submitToSheet(endpoint, payload) {
@@ -298,20 +298,22 @@
       return new Promise((resolve) => setTimeout(resolve, 800));
     }
 
-    // Google Apps Script requiere Content-Type: text/plain para evitar
-    // preflight CORS. El servidor parsea el JSON igualmente.
-    const response = await fetch(endpoint, {
-      method: 'POST',
-      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify(payload),
-      redirect: 'follow',
-    });
-
-    if (!response.ok) {
-      throw new Error(`Error ${response.status}`);
+    // Enviar como formulario URL-encoded para máxima compatibilidad con Google Apps Script
+    const formData = new URLSearchParams();
+    for (const [key, value] of Object.entries(payload)) {
+      formData.append(key, value);
     }
 
-    return response.json();
+    await fetch(endpoint, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: formData.toString(),
+    });
+
+    // Con mode: 'no-cors' no podemos leer la respuesta,
+    // pero si no lanza error, asumimos que se envió correctamente.
+    return { result: 'ok' };
   }
 
   function showStatus(el, message, type) {
