@@ -157,8 +157,8 @@ a {
   align-items: center;
   justify-content: center;
   padding: 3rem 2rem 2rem;
-  background: var(--white) url('assets/marco-hero.ong.png') center / cover no-repeat;
-  overflow: hidden;
+  background: #FFFFFF url('assets/marco-hero.ong.png') center / 100% 100% no-repeat;
+  overflow: visible;
 }
 
 .hero::before {
