@@ -102,6 +102,28 @@ a {
   padding: var(--section-padding);
   background: url('assets/background.png') center / cover no-repeat, url('assets/marco-body.ong.png') center / 100% 100% no-repeat;
   background-color: #FFFFFF;
+  min-height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ─── Separador interno (dentro de ficha combinada) ─── */
+.internal-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  margin: 1rem 0;
+}
+
+.internal-divider::before,
+.internal-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-light), transparent);
+  opacity: 0.5;
 }
 
 .section-title {
