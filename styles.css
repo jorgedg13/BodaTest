@@ -100,8 +100,7 @@ a {
 /* ─── Secciones genéricas ─── */
 .section {
   padding: var(--section-padding);
-  background: url('assets/background.png') center / cover no-repeat, url('assets/marco-body.ong.png') center / 100% 100% no-repeat;
-  background-color: #FFFFFF;
+  background: #FFFFFF url('assets/marco-body.ong.png') center / 100% 100% no-repeat;
   min-height: 640px;
   display: flex;
   flex-direction: column;
@@ -1002,8 +1001,7 @@ select {
 .footer {
   text-align: center;
   padding: 2.5rem 2rem 3rem;
-  background: url('assets/background.png') center / cover no-repeat, url('assets/marco-body.ong.png') center / cover no-repeat;
-  background-color: #FFFFFF;
+  background: #FFFFFF url('assets/marco-body.ong.png') center / cover no-repeat;
 }
 
 .footer-ornament {
