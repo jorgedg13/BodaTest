@@ -290,30 +290,70 @@
     rsvp: 'https://script.google.com/macros/s/AKfycbxusySx-94Blb8ozmzHCsHg0jPKL6TdIOXvC4Ekk80jdEVixvfdp2J7E2ca7Ta_vtDc/exec',
   };
 
-  async function submitToSheet(endpoint, payload) {
-    // Modo demo: si no se ha configurado la URL real
-    if (endpoint.includes('YOUR_')) {
-      console.log('📋 Datos del formulario (modo demo):', payload);
-      console.log('⚠️  Configura la URL de Google Apps Script en script.js para enviar datos reales.');
-      return new Promise((resolve) => setTimeout(resolve, 800));
-    }
+  /**
+   * Enviar datos a Google Apps Script usando un iframe oculto + formulario real.
+   * Este método evita TODOS los problemas de CORS.
+   */
+  function submitToSheet(endpoint, payload) {
+    return new Promise((resolve, reject) => {
+      // Modo demo
+      if (endpoint.includes('YOUR_')) {
+        console.log('📋 Datos del formulario (modo demo):', payload);
+        setTimeout(resolve, 800);
+        return;
+      }
 
-    // Enviar como formulario URL-encoded para máxima compatibilidad con Google Apps Script
-    const formData = new URLSearchParams();
-    for (const [key, value] of Object.entries(payload)) {
-      formData.append(key, value);
-    }
+      try {
+        // Crear iframe oculto
+        const iframeName = 'rsvp-iframe-' + Date.now();
+        const iframe = document.createElement('iframe');
+        iframe.name = iframeName;
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
 
-    await fetch(endpoint, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: formData.toString(),
+        // Crear formulario real que apunte al iframe
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.action = endpoint;
+        form.target = iframeName;
+        form.style.display = 'none';
+
+        // Añadir cada campo como input hidden
+        for (const [key, value] of Object.entries(payload)) {
+          const input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = key;
+          input.value = value;
+          form.appendChild(input);
+        }
+
+        document.body.appendChild(form);
+
+        // Cuando el iframe cargue (respuesta recibida), limpiamos
+        iframe.addEventListener('load', () => {
+          // Pequeño delay para asegurar que Google procesó los datos
+          setTimeout(() => {
+            document.body.removeChild(form);
+            document.body.removeChild(iframe);
+            resolve({ result: 'ok' });
+          }, 500);
+        });
+
+        // Timeout de seguridad (10 segundos)
+        setTimeout(() => {
+          try {
+            document.body.removeChild(form);
+            document.body.removeChild(iframe);
+          } catch (e) { /* ya eliminados */ }
+          resolve({ result: 'ok' }); // Asumimos que fue bien
+        }, 10000);
+
+        // Enviar el formulario
+        form.submit();
+      } catch (err) {
+        reject(err);
+      }
     });
-
-    // Con mode: 'no-cors' no podemos leer la respuesta,
-    // pero si no lanza error, asumimos que se envió correctamente.
-    return { result: 'ok' };
   }
 
   function showStatus(el, message, type) {
