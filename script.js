@@ -7,9 +7,9 @@
   'use strict';
 
   /* ─────────────────────────────────────
-     1. COUNTDOWN — Cuenta atrás (18 Abril 2027)
+     1. COUNTDOWN — Cuenta atrás (6 Marzo 2027)
      ───────────────────────────────────── */
-  const EVENT_DATE = new Date('2027-04-18T11:00:00').getTime();
+  const EVENT_DATE = new Date('2027-03-06T11:00:00').getTime();
 
   const timerEls = {
     days: document.getElementById('days'),
